@@ -1,0 +1,27 @@
+.pet__grid {
+  display: grid;
+  grid-template-rows: 322px 326px;
+  grid-template-columns: 480px 280px 380px;
+  gap: 48px 20px; 
+  
+  
+}
+.pet__photo:nth-child(3) {
+  max-height: 696px;
+  grid-row: 1 / span 2;
+  grid-column-start: 3;
+  grid-row-end: 4;
+}
+.pet__enclosure {
+  display: grid;
+  grid-template-columns: 280px 280px 180px;
+  gap: 20px;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 3;
+}
+.pet__presantation  {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130% ;
+  color: #282626;
+}
