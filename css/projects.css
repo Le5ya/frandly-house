@@ -12,9 +12,10 @@
 }
 .project {
   display: grid;
-  grid-template-columns: 300px 380px; 
+  grid-template-columns: 300px 380px;
+  justify-content: space-between; 
   vertical-align: top;
-  row-gap: 20px;  
+  gap: 20px;  
 }
 .project__subtitle {
   font-family: 'Helvetica Neue Cyr Heavy', sans-serif;
@@ -139,7 +140,7 @@ margin-bottom: 20px;
 @media (max-width: 900px) {
   .projects__grid {
     max-width: 700px;
-    grid-template-columns: 480px 280px;
+    grid-template-columns: 440px 240px;
     gap: 20px;
     
   }
@@ -183,7 +184,7 @@ margin-bottom: 20px;
   }
   .bunner__link {
     top: 230px;
-    left: 85px;
+    left: 80px;
   }
   .anonce__title {
   font-size: 18px;

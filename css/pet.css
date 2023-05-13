@@ -45,38 +45,78 @@
     grid-row: 1 / 3;
     grid-column: 3 / 4;
   }
-  .pet__presantation  {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 133%;
-    color: #282626;
-  }
+  
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .pet__grid {
-    /* grid-template-rows: 235px 214px; */
-    grid-template-columns: 380px 180px 280px;
+    max-width: 700px; 
+    grid-template-columns: 
+    [one-c-s]
+    4fr
+    [one-c-e two-c-s]
+    2fr
+    [two-c-e three-c-s]
+    3fr
+    [three-c-e];
+    grid-template-rows:
+    [one-r-s]
+    282px
+    [one-r-e two-r-s]
+    384px
+    [two-r-e three-r-s]
+    550px
+    [tree-r-e four-r-s]
+    176px
+    [four-r-e];
     gap: 40px 20px;  
+  }
+  .pet__photo_out:nth-child(1) {
+    grid-column: one-c-s / two-c-e;
+    grid-row: one-r-s / two-r-e;
+  }
+  .pet__photo_out:nth-child(2) {
+    grid-column: three-c-s / three-c-e;
+    grid-row: one-r-s / two-r-e;
+  }
+  .pet__photo_out:nth-child(3) {
+    grid-column: two-c-s / three-c-e;
+    grid-row: three-r-s / four-r-e;
   }
   .pet__presantation  {
     font-size: 18px;
     line-height: 133% ; 
   }
   .pet__enclosure {
-    height: 238px;
+    max-width: 700px;
     display: grid;
-    grid-template-rows: 214px 104px;
-    grid-template-columns: 180px 180px 180px;
-    gap: 20px;
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 3;
+    grid-template-rows:
+    [one-r-s]
+    384px
+    [one-r-e two-r-s]
+    550px
+    [two-r-e];
+    grid-template-columns:
+    [one-c-s]
+    4fr
+    [one-c-e two-c-s]
+    20px 
+    [two-c-e three-c-s]
+    20px
+    4fr
+    [three-c-e];
+    gap: 40px 20px;
   }
-  .pet__photo_close:last-child {
-    grid-row: 1 / 3;
+  .pet__photo_close:nth-child(1) {
+    grid-column: one-c-s / two-c-e;
+    grid-row: one-r-s / one-r-e;
   }
-  .pet__presantation  {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 133% ;
+  .pet__photo_close:nth-child(2) {
+    grid-column: three-c-s / three-c-e;
+    grid-row: one-r-s / one-r-e;
   }
+  .pet__photo_close:nth-child(3) {
+    grid-column: one-c-s / one-c-e;
+    grid-row: two-r-s / three-r-e;
+  }
+  
 }
