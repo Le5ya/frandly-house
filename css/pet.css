@@ -60,15 +60,15 @@
     [three-c-e];
     grid-template-rows:
     [one-r-s]
-    282px
+    262px
     [one-r-e two-r-s]
-    384px
+    364px
     [two-r-e three-r-s]
     550px
     [tree-r-e four-r-s]
     176px
     [four-r-e];
-    gap: 40px 20px;  
+    gap: 30px 20px;  
   }
   .pet__photo_out:nth-child(1) {
     grid-column: one-c-s / two-c-e;
@@ -91,7 +91,7 @@
     display: grid;
     grid-template-rows:
     [one-r-s]
-    384px
+    354px
     [one-r-e two-r-s]
     550px
     [two-r-e];
@@ -105,6 +105,7 @@
     4fr
     [three-c-e];
     gap: 40px 20px;
+
   }
   .pet__photo_close:nth-child(1) {
     grid-column: one-c-s / two-c-e;
@@ -119,4 +120,74 @@
     grid-row: two-r-s / three-r-e;
   }
   
+}
+@media (max-width: 450px) {
+  .pet__grid {
+    display: grid;
+    max-width: 270px;
+    grid-template-rows:
+    [one-r-s] 
+    214px
+    [one-r-e two-r-s] 
+    334px
+    [two-r-e three-r-s]
+    518px
+    [three-r-e four-r-s]
+    1062px
+    [four-r-e];
+    grid-template-columns:
+    [one-c-s] 
+    270px
+    [one-c-e];
+    row-gap: 20px;  
+  }
+  .pet__photo_out:nth-child(1) {
+    grid-row: one-r-s / one-r-e;
+    grid-column: one-c-s /one-c-e;
+  }
+  .pet__photo_out:nth-child(2) {
+    grid-row: two-r-s / two-r-e;
+    grid-column: one-c-s /one-c-e;
+  }
+  .pet__photo_out:nth-child(3) {
+    grid-row: three-r-s / three-r-e;
+    grid-column: one-c-s /one-c-e;
+  }
+
+  
+  .pet__enclosure {
+    display: grid;
+    max-width: 270px;
+    /* grid-template-columns: 270px; */
+    grid-template-rows:
+    [one-r-s] 
+    304px 
+    [one-r-e two-r-s]
+    454px
+    [two-r-e three-r-s] 
+    304px
+    [three-r-e];
+    grid-template-columns:
+    [one-c-s] 
+    270px
+    [one-c-e];
+
+    row-gap: 20px;
+    grid-row: 4 / span 1;
+    /* grid-column: 1 / span 2; */
+  }
+  .pet__photo_close:nth-child(1) {
+    grid-row: three-r-s / three-r-e;
+    grid-column: one-c-s /one-c-e;
+  }
+  .pet__photo_close:nth-child(2) {
+    grid-row: one-r-s / one-r-e;
+    grid-column: one-c-s /one-c-e;
+  }
+
+  .pet__presantation  {
+    font-size: 14px;
+    line-height: 24px; ;
+  }
+
 }

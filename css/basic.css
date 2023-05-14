@@ -75,6 +75,10 @@ img {
   background-image: url('../img/link-arrow.svg');
 }
 @media (max-width: 1040px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 39px;
+  }
   .container {
     max-width: 1024px;
     padding: 0 72px;
@@ -97,6 +101,10 @@ img {
     }
 }
 @media (max-width: 900px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 34px;
+  }
   .container {
     max-width: 700px;
     padding: 0 34px;
@@ -106,5 +114,43 @@ img {
     line-height: 113%;
     margin-top: 30px;
   }
+  .link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .link:after {
+    top: 0;
+    }
   
 }
+@media (max-width: 654px) {
+  .container {
+    max-width: 649px;
+    padding: 0 7px;
+  }
+}
+@media (max-width: 450px) {
+  .section {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 23px;
+
+  }
+  .container {
+    max-width: 320px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+  .link:after {
+    top: 0;
+    left: calc(100% +2px);
+    }
+ 
+}
+ 
