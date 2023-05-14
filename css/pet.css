@@ -47,7 +47,7 @@
   }
   
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .pet__grid {
     max-width: 700px; 
     grid-template-columns: 
