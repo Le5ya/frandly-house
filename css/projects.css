@@ -80,7 +80,6 @@ margin-bottom: 20px;
 }
 @media (max-width: 1040px) {
   .projects__grid {
-    max-width: 880px;
     grid-template-columns: 580px 280px;
     gap: 20px;
     
@@ -112,7 +111,10 @@ margin-bottom: 20px;
   line-height: 133%;
   margin-bottom: 6px;
   }
-  .anonce__link {
+  .anonce__link{
+    position: absolute;
+    top: 193px;
+    left: calc(45%);
     display: block;
   }
   
@@ -291,7 +293,7 @@ margin-bottom: 20px;
     font-size: 14px;
     line-height: 143%;
     top: 80px;
-    left: calc(50% + 10px)
+    left: calc(50% + 10px);
   }
   
   .anonce__grid {
