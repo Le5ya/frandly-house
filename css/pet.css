@@ -48,10 +48,9 @@
 }
 @media (max-width: 1040px) {
   .pet__grid {
-    /* max-width: 100%; */
     grid-template-rows: 235px 214px 150px;
-    grid-template-columns: 21% 21% 21% 32%;
-    gap: 40px 20px;  
+    grid-template-columns: 20% 20% 20% 31%;
+      gap: 40px 20px;
   }
   .pet__photo_out:nth-child(2) img{
     width: 100%;
