@@ -44,7 +44,7 @@ img {
 
 .container {
   max-width: 1240px;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -80,8 +80,8 @@ img {
     padding-bottom: 39px;
   }
   .container {
-    max-width: 964px;
-    padding: 0 30px;
+    max-width: 980px;
+      padding: 0 30px;
   }
   .title {
     min-width: 380px;
