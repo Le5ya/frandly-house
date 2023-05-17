@@ -107,6 +107,9 @@ margin-bottom: 20px;
     max-width: 260px;
     top: 196px;
   }
+        .projects__side {
+          gap: 33px
+        }
   .bunner__link {
     top: 299px;
     left: 135px;
@@ -118,7 +121,7 @@ margin-bottom: 20px;
   }
   .anonce__link{
     position: absolute;
-    top: 193px;
+    top: 220px;
     left: calc(45%);
     display: block;
   }
@@ -139,9 +142,7 @@ margin-bottom: 20px;
     grid-template-columns: auto 360px; 
     vertical-align: top;
   }
-        .projects__side {
-    gap: 33px
-  }
+
 }
 @media (max-width: 900px) {
   .projects__grid {
@@ -221,9 +222,9 @@ margin-bottom: 20px;
     gap: 20px;
   }
 
-        .projects__side {
-    row-gap: 33px
-  }
+                                                                                                                                /*.projects__side {
+                                                                                                                            row-gap: 33px;
+                                                                                                                          }*/
 }
 @media (max-width: 450px) {
   .projects__grid {

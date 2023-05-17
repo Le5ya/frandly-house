@@ -100,13 +100,13 @@ img {
     height: 17px;
     }
 }
-@media (max-width: 902px) {
+@media (max-width: 900px) {
   .section {
     padding-top: 60px;
     padding-bottom: 34px;
   }
   .container {
-    max-width: 700px;
+    max-width: 768px;
     padding: 0 34px;
   }
   .title {
