@@ -144,7 +144,7 @@
   
   
 }
-@media (max-width: 664px) {
+@media (max-width: 684px) {
   .pet__grid {
     max-width: 634px;
     grid-template-columns: repeat(2, 48%);
@@ -154,12 +154,16 @@
     .pet__photo:nth-child(6) {
       grid-column: 1 / 2;
     }
-    .pet__photo:nth-child(2),
+                                .pet__photo:nth-child(2),
     .pet__photo:nth-child(3),
     .pet__photo:nth-child(5) {
       grid-column: 2 / 3;
     }
-    .pet__photo:nth-child(1) img {
+                .pet__photo:nth-child(1) img {
+                  height: 88%;
+                  }
+                  
+                  .pet__photo:nth-child(5) img {
       height: 88%;
     }
 }

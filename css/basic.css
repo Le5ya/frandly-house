@@ -40,6 +40,7 @@ img {
 .section {
   padding-top: 100px;
   padding-bottom: 50px;
+  margin: 0;
 }
 
 .container {
@@ -112,7 +113,7 @@ img {
   .title {
     font-size: 30px;
     line-height: 113%;
-    margin-top: 30px;
+  
   }
   .link {
     font-size: 14px;
@@ -123,34 +124,35 @@ img {
     }
   
 }
-@media (max-width: 664px) {
+@media (max-width: 684px) {
+  .section {
+      padding-top: 60px;
+        padding-bottom: 34px;
+      }
+  
   .container {
-    max-width: 634px;
+  max-width: 664px;
+    padding: 0 20px;
+  }
+  
+.title {
+  font-size: 30px;
+    line-height: 113%;
+  }
+            .link {
+              font-size: 14px;
+              line-height: 20px;
+            }
+            .link:after {
+              top: 0;
+    }
+
+ 
+}
+@media(max-width: 450px) {
+  .container {
+    max-width: 290px;
     padding: 0 15px;
   }
-}
-@media (max-width: 450px) {
-  .section {
-    /* padding-right: 0;
-    padding-left: 0; */
-    padding-top: 40px;
-    padding-bottom: 23px;
-    margin: 0 auto;
 
-  }
-  .container {
-    max-width: 296px;
-    padding: 0 12px;
-  }
-  .title {
-    font-size: 20px;
-    line-height: 120%;
-    margin-top: 20px;
-  }
-  .link:after {
-    top: 0;
-    left: calc(100% +2px);
-    }
- 
 }
- 
