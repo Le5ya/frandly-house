@@ -68,12 +68,12 @@ margin-bottom: 19px;
   line-height: 133%;
   color: #FFFFFF;
   max-width: 360px;
-  top: 293px;
+  bottom: 40px;
   left: 10px;
 }
 .bunner__link {
   position: absolute;
-  top: 383px;
+  bottom: 20px;
   left: 218px;
 }
 .info__text {
@@ -105,11 +105,11 @@ margin-bottom: 20px;
     font-size: 24px;
     line-height: 125%;
     max-width: 260px;
-    top: 196px;
+    bottom: 10px;;
   }
-        .projects__side {
-          gap: 33px
-        }
+  .projects__side {
+    gap: 33px
+  }
   .bunner__link {
     top: 299px;
     left: 135px;
