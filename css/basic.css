@@ -51,7 +51,6 @@ img {
 
 .title {
   font-family: 'Comfortaa';
-  min-width: 380px;
   font-weight: 400;
   font-size: 50px;
   line-height: 60px;
@@ -85,7 +84,6 @@ img {
       padding: 0 30px;
   }
   .title {
-    min-width: 380px;
     font-size: 44px;
     line-height: 54px;
     margin-bottom: 40px;
@@ -139,13 +137,10 @@ img {
   font-size: 30px;
     line-height: 113%;
   }
-            .link {
-              font-size: 14px;
-              line-height: 20px;
-            }
-            .link:after {
-              top: 0;
-    }
+.link {
+  font-size: 14px;
+  line-height: 20px;
+}
 
  
 }
@@ -154,5 +149,9 @@ img {
     max-width: 290px;
     padding: 0 15px;
   }
+  .link:after {
+  top: 2%;
+  left: 100%;
+    }
 
 }

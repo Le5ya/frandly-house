@@ -1,8 +1,9 @@
 .projects__grid {
   display: grid;
+  width: minmax(max-content, 100%);
   grid-template-columns: 65% 32%;
   justify-content: space-between;
-  column-gap: 20px;
+  column-gap: 2%;
   
 }
 .projects-list {
@@ -15,7 +16,8 @@
   display: grid;
   grid-template-columns: 34% 63%;
   vertical-align: top;
-  gap: 20px;  
+  padding: 0 10px;
+  gap: 2%;  
 }
 .project img {
   width: 100%;
@@ -33,7 +35,8 @@
 }
 .projects__side {
   display: grid;
-  gap: 52px
+  gap: 52px;
+  padding: 0 10px;
 }
 .projects__anonce {
   position: relative;
@@ -86,7 +89,7 @@ margin-bottom: 20px;
 @media (max-width: 1040px) {
   .projects__grid {
     grid-template-columns: 65% 31%;
-    gap: 20px;
+    gap: 2%;
     
   }
   .project__subtitle {
@@ -288,44 +291,41 @@ margin-bottom: 20px;
   
 .projects__grid {
   grid-template-columns: 100%;
-  grid-template-rows: 1000px 465px;
+  grid-template-rows: 600px 320px 116px;
   row-gap: 20px;
   
   }
 
   .projects-list {
-  grid-template-rows: repeat(4 180px);
-  row-gap: 5px;
+  grid-template-rows: repeat(4, 130px);
+  row-gap: 20px;
     }
     
 .project {
-
-  grid-template-columns: 35% 60%;
+  grid-template-columns: 48% 48%;
   vertical-align: top;
   justify-content: space-between;
-  gap: 10px;
+  gap: 2%;
   }
 .project__img img {
   min-width: 100%;
-  min-height: 100%;
+  min-height: 120%;
   object-fit: cover;
 }
   .project__subtitle {
       font-size: 16px;
       line-height: 22px;
+      max-width: 130px;
       margin-bottom: 6px;
     }
       
   .info__text {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   max-width: 130px;
   max-height: 38px;
   overflow: hidden;
-  }
-  .info__link {
-    bottom: 0;
   }
   .projects__side {
    min-height: 100%;
@@ -350,7 +350,7 @@ margin-bottom: 20px;
   }
   .bunner__link {
       top: 230px;
-      left: 10px;
+      left: 60%;
   }
   .anonce__grid {
     width: 100%;
@@ -361,8 +361,8 @@ margin-bottom: 20px;
 
 .anonce__link {
   position: absolute;
-  top: 224px
-    display: none;
+  top: 90px;
+  left: 35%;
   }
 
 .anonce__title {
