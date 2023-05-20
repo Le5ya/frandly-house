@@ -49,6 +49,7 @@ img {
   margin: 0 auto;
 }
 
+
 .title {
   font-family: 'Comfortaa';
   font-weight: 400;
@@ -74,13 +75,15 @@ img {
   left: calc(100% + 15px);
   background-image: url('../img/link-arrow.svg');
 }
+
+
 @media (max-width: 1040px) {
   .section {
     padding-top: 80px;
     padding-bottom: 39px;
   }
   .container {
-    max-width: 980px;
+    max-width: 940px;
       padding: 0 30px;
   }
   .title {
